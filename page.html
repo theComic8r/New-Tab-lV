@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://kit.fontawesome.com/5bc597a1ad.js" crossorigin="anonymous"></script>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link rel="icon" type="image/png" src="https://photos.app.goo.gl/nJnDq3un5H33VdqeA">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home Page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="sidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a href="homepage.html" class="menu">Home</a>
+				<a href="page.html" class="menu">Page</a>
+				<a href="about.html" class="menu">About</a>
+				<a href="contact.html" class="menu">Contact</a>
+			</div>
+			<div class="section">
+				<div class="top_navbar">
+					<div class="hamburger">
+						<button class="hamburger" onclick="openNav()">&#9776;</button>
+					</div>
+					<div class="search">
+					<form id="form" role="search">
+						<input type="search" id="query" name="q"
+						 placeholder=" Search..."
+						 aria-label="Search through site content">
+						<button>
+							<div class="search_icon">
+							<i class="fa-solid fa-magnifying-glass"></i>
+							</div>
+						</button>
+					</form>
+					</div>
+				</div>
+				<div class="container">
+					<div class="heading">
+						<p>Page</p>
+					</div>
+					<div class="textbody">
+						<iframe width="1020" height="600" frameborder="0" src="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fcdn.dos.zone%2Fcustom%2Fdos%2Fdoom.jsdos?anonymous=1" allowfullscreen>
+                        </iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--navigation sidebar-->
+		<script>
+			function openNav() {
+  			document.getElementById("sidebar").style.width = "250px";
+  			document.getElementById("section").style.marginLeft = "250px";
+			}
+			function closeNav() {
+  			document.getElementById("sidebar").style.width = "0";
+  			document.getElementById("section").style.marginLeft = "0";
+			}
+		</script>
+		<!--searchbar-->
+		<script>
+
+		</script>
+	</body>
+	<style>
+		*{
+			list-style: none;
+			text-decoration: none;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+		body {
+			background-color: #1d4556;
+		}
+		.sidebar {
+			background-color: #1c1c1c;
+			height: 100%; /* 100% Full-height */
+  			width: 0; /* 0 width - change this with JavaScript */
+  			position: fixed; /* Stay in place */
+  			z-index: 1; /* Stay on top */
+  			top: 0;
+  			left: 0;
+  			overflow-x: hidden; /* Disable horizontal scroll */
+  			padding-top: 60px; /* Place content 60px from the top */
+  			transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+		}
+		.menu{
+			margin-left: 45px;
+  			display: block;
+ 			color: #ffffff;
+ 			font-size: 17px;
+  			position: relative;
+			margin-bottom: 10px;
+		}
+		.wrapper .sidebar a:hover,
+		.wrapper .sidebar a.active{
+			color: #cbcbcb;
+		}
+		.section {
+			width: calc(100% - 225px);
+			transition: all 0.5s ease;
+		}
+		.top_navbar{
+			background-color: rgba(0,0,0,0);
+			height: 50px;
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+		}
+		.hamburger{
+			padding-bottom: 15px;
+			font-size: 28px;
+			color: #ffffff;
+		}
+		.hamburger:hover{
+			color: #cbcbcb;
+		}
+		.search{
+			position: absolute;
+			right: 20px;
+		}
+		button{
+			background-color: rgba(255, 255, 255, 0);
+			color: #ffffff;
+			border-width: 2px;
+			border-color: rgba(255, 255, 255, 0);
+			font-size: 20px;
+			height: 20px;
+			vertical-align: top;
+		}
+		.heading{
+			color: #ffffff;
+			text-align: center;
+			margin-top: 100px;
+			font-size: 50px;
+			font-weight: 2px;
+		}
+		.textbody{
+            margin-top: 10px;
+			text-align: center;
+		}
+		.search input{
+			background-color: #ffffff;
+			border-width: 0px;
+			border-radius: 2px;
+			height: 24px;
+			width: 200px;
+		}
+		.closebtn{
+			position: absolute;
+  			top: -5px;
+  			left: 10px;
+  			font-size: 50px;
+			color: #ffffff;
+			font-weight: lighter;
+		}
+		.closebtn:hover{
+			color: #cbcbcb;
+		}
+	</style>
+</html>
